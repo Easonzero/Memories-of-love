@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //启动firstActivity，同时传递消息material
                 Intent intent = new Intent(MainActivity.this,FirstActivity.class);
                 intent.putExtra("material","她的名字");
                 startActivity(intent);

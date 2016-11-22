@@ -22,6 +22,7 @@ public class EndActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //以下代码是用来直接结束一个app的
                 int currentVersion = android.os.Build.VERSION.SDK_INT;
                 if (currentVersion > android.os.Build.VERSION_CODES.ECLAIR_MR1) {
                     Intent startMain = new Intent(Intent.ACTION_MAIN);
